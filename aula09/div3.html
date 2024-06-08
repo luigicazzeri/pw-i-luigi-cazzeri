@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .cabecalho {
+            background-color:#e640a9;
+        }
+
+        .rodape {
+            background-color:#40e656;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;            
+        }
+
+        div.menu {
+            width: 30%;
+            flex-direction: column;
+            background-color:#FFF4A3;
+
+            a {
+                margin: 5px 2px;
+            }
+        }
+
+        div.conteudo {
+            width: 70%;
+            display: block !important;
+            background-color:#FFC0C7;
+            
+            h2, p {
+                margin: 5px;
+            }
+        }
+    </style>
+    <body>
+        <div class="cabecalho">
+            <h2>Titulo</h2>
+        </div>
+        
+        <div class="mycontainer">
+            <div class="menu">
+                <a href="www.google.com.br">Google</a>
+                <a href="www.bing.com.br">Bing</a>
+            </div>
+
+            <div class="conteudo">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+
+        </div>
+
+        <div class="rodape">
+            <h6>Titulo</h6>
+        </div>
+
+    </body>
+</html>
