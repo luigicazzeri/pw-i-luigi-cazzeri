@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Portifolio</title>
+</head>
+<body>
+    <section class="topo">
+        <h1>Luigi Cazzeri Locatelli</h1>
+        <h2>Um pouco sobre mim...</h2>
+        <p> Olá! Sou um jovem de 16 anos, atualmente desbravando o mundo da tecnologia, com foco em Suporte e Infraestrutura. Mas não paro por aí, estou mergulhando de cabeça no universo do Desenvolvimento de Sistemas, buscando aprimorar minhas habilidades nessa área para uma transição completa no futuro. Sou movido pela curiosidade e pelo desejo constante de aprender coisas novas. Aqui nesta página, você pode descobrir um pouco mais sobre mim, dependendo do tempo que o talentoso mestre e professor João reservar para finalizar este projeto. Estou ansioso para compartilhar essa jornada com você! 😊
+        </p>
+        <hr>
+
+    </section>
+
+    <div class="titulo">
+        <h1>Materias Favoritas</h1>
+    </div>
+
+    <section class="materias">
+        <div>
+            <h1>Programação Web I</h1>
+            <h2>Assuntos:</h2>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Outros...</p>
+        </div>
+
+        <div>
+            <h1>Programação e Algoritmo</h1>
+            <h2>Assuntos:</h2>
+            <p>Logica</p>
+            <p>Portugol</p>
+            <p>Algoritmos</p>
+        </div>
+
+        <div>
+            <h1>Banco de Dados</h1>
+            <h2>Assuntos:</h2>
+            <p>SQL</p>
+            <p>Tabelas</p>
+            <p>Estruturas e Relações</p>
+        </div>
+    </section>
+    <hr>
+
+    <section class="notas">
+        <div>
+        <h1>Algumas notas</h1>
+    <table>
+        <tr>
+            <th>Materia</th>
+            <th >Professor</th>
+            <th>Nota</th>
+        </tr>
+
+        <tr>
+            <td>PROGRAMAÇÃO WEB I</td>
+            <td>MB</td>
+            <td>JOÃO E DAVI</td>
+        </tr>
+
+        <tr>
+            <td>PROGRAMAÇÃO E ALGORITMO</td>
+            <td>MB</td>
+            <td>JUAREZ</td>
+        </tr>
+
+        <tr>
+            <td>BANCO DE DADOS</td>
+            <td>MB</td>
+            <td>ALINE</td>
+        </tr>
+    </table>
+        </div>
+    </section>
+    
+</body>
+</html>
+
+<style>
+    *{
+        margin: 10px;
+        background-color: #0d1117;
+    }
+
+/*  Primeira sessao - Sobre mim */
+
+    .topo img {
+        width: 300px;
+        border-radius: 50%;
+        margin-left: 100px;
+        transition: .5s;
+}
+
+    .topo h1 {
+        margin-left: 60px;
+        font-size: 25px;
+        color: azure;
+}
+
+    .topo h2 {
+        font-size: 30px;
+        padding: 10px;
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-top: -350px;
+        color:azure
+}
+
+    .topo p {
+        font-size: 20px;
+        font-family: "Lucida Console";
+        border-bottom: 1px solid #001F3F;
+        margin-left: 30%;
+        margin-right: 10%;
+        text-align: justify;
+        text-shadow: 1px 1px #000000;
+        color: azure;
+
+
+}
+    .topo hr {
+        margin-top: 250px;
+        border: 10px solid #238636;
+}
+
+@media screen and (max-width: 800px) {
+  .topo img, .topo h1, .topo h2, .topo p{
+    display: block;
+    margin-top: auto;
+    text-align: center;
+    align-items: center;
+  }
+
+}
+
+/*  Segunda sessao - Materias */
+    hr{
+        border: 5px solid #238636;
+    }
+
+    .titulo {
+        text-align: center;
+        color: azure;
+    }
+
+    .materias {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        margin: 100px;
+}
+
+    .materias div {
+        background-color: #001F3F;
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #238636;
+        transition: border-color 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+
+}
+
+    .materias div:hover {
+        border-color: #238636;
+        transform: scale(1.3);
+}
+
+    .materias h1 {
+        background-color: #001F3F;
+        color: azure;
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 15px;
+}
+    .materias h2 {
+        color: azure;
+        background-color: #001F3F;
+
+}
+
+    .materias p {
+        background-color: #001F3F;
+        color: azure;
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-align: center;
+}
+
+    .materias img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px #AAA;
+        margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .materias{
+    width: 100%;
+    display: block;
+  }
+  .titulo{
+      text-align: center;
+  }
+}
+
+/*  Terceita sessao - Notas e Tabelas */
+
+    .notas h1 {
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: azure;
+}
+
+    table {
+        border: 1px solid hsl(0, 0%, 0%);
+        width: 50%;
+        margin-left: 25%;
+        color: azure;
+        background-color: #001F3F;
+}
+  
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+        background-color: #001F3F;
+}
+  
+    tr:nth-child(even) {
+        background-color: #dddddd;
+        
+}
+
+</style>

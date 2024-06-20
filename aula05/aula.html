@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Links HTML</title>
+</head>
+
+<!-- Blank = Abre em uma nova guia -->
+<!-- Self = Abre na mesma guia que foi clicado -->
+<!-- Parent = Abre a pagina em um bloco especifico -->
+
+<!-- Top = Substitui os frames anteriores pelo atual -->
+
+<body>
+    <h1>TIPOS DE LINKS</h1>
+    <a href="http://127.0.0.1:5500/aula04_perfil/perfil.html">Clique aqui</a>
+    <br>
+
+    <a href="https://www.w3schools.com/">
+        <img src="/aula05/images/imglink.jpg" alt="Teste" style="width: 300px">
+    </a>
+
+    <table>
+        <tr>
+            <th><a href="https://www.w3schools.com/" target="_self">Exemplo Link SELF</a></th>
+        </tr>
+
+        <tr>
+            <th><a href="https://www.w3schools.com/" target="_blank">Exemplo Link BLANK</a></th>
+        </tr>
+
+        <tr>
+            <th><a href="https://www.w3schools.com/" target="_top">Exemplo Link TOP</a>
+                <br></th>
+        </tr>
+
+        <tr>
+            <th><a href="mailto:victorrodrigues288@gmail.com">Enviar Email</a></th>
+        </tr>
+
+        <button onclick=document.location="https://www.w3schools.com/">Clique aqui</button>
+    </table>
+</body>
+</html>
+
+<style>
+
+    table{
+        border: 1px solid #000;
+    }
+
+    td, th{
+        border: 1px solid #000;
+    }
